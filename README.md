@@ -6,3 +6,5 @@
 ___
 
 > **[© Powered By Prak-Harper ⚡︎](https://github.com/Prakharper)**
+
+**[Canal Oficial](https://whatsapp.com/channel/0029VakfOZfHFxP7rNrUQk2d)
