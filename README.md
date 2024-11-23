@@ -1,5 +1,5 @@
 **`PrakBot- En Desarrollo🚩`**
-> **Version Beta**
+> **Version:** Beta
 
 ![Prak](https://files.catbox.moe/5msd4h.jpg)
 
