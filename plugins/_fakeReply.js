@@ -2,13 +2,13 @@ import fetch from 'node-fetch'
 
 export async function before(m, { conn }) {
 let name = '𝑷𝒓𝒂𝒌𝑩𝒐𝒕- 𝑴𝑫 - 𝑪𝒉𝒂𝒏𝒏𝒆𝒍'
-let imagenes = ["https://i.ibb.co/JmcS3kv/Sylph.jpg",
-"https://i.ibb.co/Cs6Tt9V/Sylph.jpg",
-"https://i.ibb.co/JmcS3kv/Sylph.jpg",
-"https://i.ibb.co/Cs6Tt9V/Sylph.jpg",
-"https://i.ibb.co/JmcS3kv/Sylph.jpg",
-"https://i.ibb.co/Cs6Tt9V/Sylph.jpg",
-"https://i.ibb.co/JmcS3kv/Sylph.jpg"]
+let imagenes = ["https://files.catbox.moe/aitrwl.jpg",
+"https://files.catbox.moe/say0dh.jpg",
+"https://files.catbox.moe/9gylyb.jpg",
+"https://files.catbox.moe/53hv9g.jpg",
+"https://files.catbox.moe/sonk72.jpg",
+"https://files.catbox.moe/aitrwl.jpg",
+"https://files.catbox.moe/say0dh.jpg"]
 
 let icono = imagenes[Math.floor(Math.random() * imagenes.length)]
 
