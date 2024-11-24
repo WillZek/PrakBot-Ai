@@ -1,6 +1,6 @@
 {
-    "name": "PrakBot-Ai",
-    "version": "1.0.0",
+    "name": "Sylphiette",
+    "version": "3.0.0",
     "description": "Is the best",
     "main": "index.js",
     "type": "module",
@@ -20,45 +20,41 @@
         "whatsapp",
         "js-whatsapp",
         "whatsapp",
-        "StarCore-bot",
-        "StarCore",
+        "Sylph-bot",
+        "Sylph",
         "multi-device",
-        "StarCore",
+        "Sylphiette",
         "baileys-md"
     ],
-    "homepage": "https://github.com/WillZek/PrakBot-Ai",
+    "homepage": "https://github.com/FzTeis/Sylphiette",
     "author": {
-        "name": "WillZek"
+        "name": "FzTeis"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/WillZek/PrakBot-Ai.git"
+        "url": "git+https://github.com/FzTeis/Sylphiette.git"
     },
     "bugs": {
-        "url": "https://github.com/WillZek/PrakBot-Ai/issues"
+        "url": "https://github.com/FzTeis/Sylphiette/issues"
     },
     "license": "MIT",
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "^4.2.4",
         "@kaviaann/scrape": "^1.0.1",
-        "@SumiFX/Scraper": "github:SumiFX/SumiFX-Scraper",
-        "@StarlightsTeam/Scraper":
-"github:StarlightsTeam/StarlightsTeam-Scraper",
         "@vitalets/google-translate-api": "^9.2.0",
-        "@whiskeysockets/baileys": "^6.7.8",
+        "@whiskeysockets/baileys": "^6.7.5",
         "@xct007/frieren-scraper": "^0.0.2",
+        "google-libphonenumber": "latest",
         "acrcloud": "^1.4.0",
         "adm-zip": "^0.5.16",
         "api-dylux": "^1.8.5",
         "aptoide-scraper": "^1.0.1",
         "awesome-phonenumber": "^3.4.0",
-        "google-libphonenumber": "3.2.38",
         "axios": "^1.1.2",
         "btch-downloader": "^2.3.2",
         "canvafy": "^7.2.0",
-        "cfonts": "^3.2.0",
-        "boxen": "^7.1.1",
+        "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
         "groq-sdk": "latest",
         "cheerio": "npm:cheerio@1.0.0-rc.12",
