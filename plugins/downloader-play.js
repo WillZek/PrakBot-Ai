@@ -48,8 +48,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 };
 
-handler.command = ['play', 'playvid'];
-handler.help = ['play', 'playvid'];
+handler.command = ['play2', 'playvid'];
+handler.help = ['play2', 'playvid'];
 handler.tags = ['Descargas'];
 handler.diamond = 4;
 
