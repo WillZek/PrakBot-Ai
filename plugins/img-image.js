@@ -14,7 +14,7 @@ await m.react('✖️')
 }}
 handler.help = ['imagen *<búsqueda>*']
 handler.tags = ['img']
-handler.command = ['image', 'gimage', 'imagen']
+handler.command = ['image2', 'gimage', 'imagen2']
 handler.register = true 
 //handler.limit = 1
 export default handler
