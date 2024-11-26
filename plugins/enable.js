@@ -67,6 +67,17 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     chat.nsfw = isEnable          
     break
 
+ case 'modoadmin':
+    case 'soloadmin':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.modoadmin = isEnable
+      break
+
      case 'antiarabes':
      case 'antinegros':
        if (m.isGroup) {
@@ -95,6 +106,9 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 
 *Tipo :* autoread 
 *Descripción :* Des/Activa el *AutoRead* para el Bot
+
+*Tipo :* modoadmin
+*Descripción :* Des/Activa el *Modoadmin* para el Bot
 
 *Tipo :* document 
 *Descripción :* Des/Activa la *Descarga En Documentos* para el Usuario
