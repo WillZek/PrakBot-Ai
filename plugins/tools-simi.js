@@ -25,6 +25,6 @@ const handler = async (m, {text, command, args, usedPrefix}) => {
   }
 };
 handler.help = ['simi']
-handler.tags = ['ai'];
+handler.tags = ['tools'];
 handler.command = /^((sim)?simi|alexa|prak|prakbot)$/i;
 export default handler;
