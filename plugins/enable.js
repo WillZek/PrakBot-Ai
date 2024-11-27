@@ -78,6 +78,21 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.modoadmin = isEnable
       break
 
+  case 'detect':
+    case 'configuraciones':
+    case 'avisodegp':
+      if (!m.isGroup) {
+        if (!isOwner) {
+          global.dfail('group', m, conn)
+          throw false
+        }
+      } else if (!isAdmin) {
+        global.dfail('admin', m, conn)
+        throw false
+      }
+      chat.detect = isEnable
+      break
+
      case 'antiarabes':
      case 'antinegros':
        if (m.isGroup) {
@@ -109,6 +124,9 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 
 *Tipo :* modoadmin
 *Descripción :* Des/Activa el *Modoadmin* para el Bot
+
+*Tipo :* detect
+*Descripción :* Des/Activa el *detect* para el Bot
 
 *Tipo :* document 
 *Descripción :* Des/Activa la *Descarga En Documentos* para el Usuario
