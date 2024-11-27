@@ -1,3 +1,5 @@
+// Código Creado Por Niño Piña Wa.me/50557865603
+
 import fetch from 'node-fetch';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (!text) throw `*👻 ingrese un texto para generar poder generar su imagen*`;
