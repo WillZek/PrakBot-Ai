@@ -18,6 +18,6 @@ throw `Error...`;
 }
 }
 handler.tags = ['tourl']
-handler.help = ['dalle']
-handler.command = ['dalle'];
+handler.help = ['togris']
+handler.command = ['togris'];
 export default handler;
