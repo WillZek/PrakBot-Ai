@@ -1,30 +1,26 @@
-import fs from "node:fs";
-async function removeBg(imageURL) {
+import fetch from 'node-fetch';
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (!text) throw `*💛 ingrese la URL de la imagen para eliminar el fondo...*`;
+m.react('🕒');
+await conn.sendMessage(m.chat, {text: '*💛 Espere un momento...*'}, {quoted: m});
+try {
 const formData = new FormData();
 formData.append("size", "auto");
-formData.append("image_url", imageURL);
+formData.append("image_url", text);
 const response = await fetch("https://api.remove.bg/v1.0/removebg", {
 method: "POST",
-headers: { "X-Api-Key": "pZoqmwkwmMSJAVdJFDnMgWB8" },
+headers: { "X-Api-Key": "INSERT_YOUR_API_KEY_HERE" },
 body: formData,
 });
-if (response.ok) {
-return await response.arrayBuffer();
-} else {
-throw new Error(`${response.status}: ${response.statusText}`);
-}
-}
-(async () => {
-try {
-const rbgResultData = await removeBg("https://www.remove.bg/example.jpg");
-fs.writeFileSync("no-bg.png", Buffer.from(rbgResultData));
-console.log("¡Fondo eliminado y guardado como no-bg.png!");
+if (!response.ok) throw new Error('Network response was not ok');
+const buffer = await response.arrayBuffer();
+m.react('☑️');
+await conn.sendMessage(m.chat, {image: Buffer.from(buffer)}, {quoted: m});
 } catch (error) {
-console.error("Error al eliminar el fondo:", error);
+throw `Error: ${error.message}`;
 }
-})();
-
-handler.tags = ['tourl']
-handler.help = ['remove']
-handler.command = ['remove','bg'];
+}
+handler.tags = ['tools'];
+handler.help = ['removebg'];
+handler.command = ['removebg'];
 export default handler;
