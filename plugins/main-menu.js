@@ -47,8 +47,6 @@ let tags = {
 const defaultMenu = {
   before: `
 > 「 ${textbot} あ⁩ 」\n
-*Nuevo Bot Para Árabes*
-+52 81 3593 0821
 
 ╔──────¤◎¤──────╗
 ┋#     ✧ *PrakBot - Ai ‹‹❑ౄ*
