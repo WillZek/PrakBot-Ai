@@ -25,7 +25,7 @@ throw `*🚨 Lo sentimos, ha ocurrido un error 😔*`;
 }
 // Definimos las etiquetas y comandos para el handler
 handler.tags = ['tools'];
-handler.help = ['genearimg'];
-handler.command = ['genearimg2', 'imgg2'];
+handler.help = ['genearimg3'];
+handler.command = ['genearimg3', 'imgg3'];
 // Exportamos el handler
 export default handler;
