@@ -23,3 +23,8 @@ console.log("¡Fondo eliminado y guardado como no-bg.png!");
 console.error("Error al eliminar el fondo:", error);
 }
 })();
+
+handler.tags = ['tourl']
+handler.help = ['remove']
+handler.command = ['remove','bg'];
+export default handler;
