@@ -89,6 +89,8 @@ export async function handler(chatUpdate) {
                     chat.bienvenida = true 
                 if (!('antiLink' in chat))
                     chat.antiLink = false
+                if (!('detect' in chat))
+                    chat.detect = true 
                 if (!('onlyLatinos' in chat))
                     chat.onlyLatinos = false
                  if (!('nsfw' in chat))
