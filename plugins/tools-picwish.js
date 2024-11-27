@@ -28,5 +28,5 @@ throw `*🚨 Lo Sentimos, ha ocurrido un error 😔*`;
 }
 handler.tags = ['tools'];
 handler.help = ['eliminarfondo'];
-handler.command = ['eliminarfondo', 'removerfondo'];
+handler.command = ['eliminarfondo', 'removerfondo','picwish'];
 export default handler;
