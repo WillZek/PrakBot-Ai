@@ -7,8 +7,9 @@ if (!text) throw `*🧑‍💻 Ingresa un texto para generar tu imagen a tu gust
 m.react('🕒');
 await conn.sendMessage(m.chat, {text: '*🧑‍💻 Espere, Estamos Trabajando en su imagen*'}, {quoted: m});
 try {
-// Hacemos la solicitud a la nueva API con el texto proporcionado
-const response = await fetch(`https://www.seaart.ai/es/ai-tools/text2img?simplePrompts=${encodeURIComponent(text)}`);
+// Hacemos la solicitud a la nueva API con el UID correspondiente
+const UID = 'aquí_tu_uid'; // Reemplaza con el UID real
+const response = await fetch(`https://api.dynapictures.com/designs/${UID}`);
 // Verificamos si la respuesta fue exitosa
 if (!response.ok) throw new Error('Network response was not ok');
 // Obtenemos el buffer de la imagen
@@ -24,7 +25,7 @@ throw `*🚨 Lo sentimos, ha ocurrido un error 😔*`;
 }
 // Definimos las etiquetas y comandos para el handler
 handler.tags = ['tools'];
-handler.help = ['genearimg3'];
-handler.command = ['genearimg3', 'imgg3'];
+handler.help = ['genearimg'];
+handler.command = ['genearimg2', 'imgg2'];
 // Exportamos el handler
 export default handler;
