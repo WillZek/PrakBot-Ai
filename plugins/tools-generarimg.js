@@ -1,30 +1,20 @@
-// Código Hecho Por Niño Piña
-// Suponiendo que esto es parte de un manejador de comandos de un bot
-// Configuración del comando
-handler.help = ['generarimg'];
-handler.tags = ['ai'];
-handler.command = /^generarimg$/i;
-handler.estrellas = 1; // Asegúrate de que el nombre sea correcto
-handler.register = true;
-handler.handleCommand = async (texto) => {
-const textoFormateado = encodeURIComponent(texto); // Formateamos el texto para la URL
-const url = `https://eliasar-yt-api.vercel.app/editar-imagen?texto=${textoFormateado}%F0%9F%98%81`;
+import fetch from 'node-fetch';
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (!text) throw `*💛 ingrese una petición para generar una imagen con el texto...*`;
+m.react('🕒');
+await conn.sendMessage(m.chat, {text: '*💛 Espere un momento...*'}, {quoted: m});
 try {
-const response = await fetch(url);
-if (!response.ok) {
-throw new Error('Error al generar la imagen');
-}
-const blob = await response.blob(); // Obtenemos la imagen como un blob
-const imgUrl = URL.createObjectURL(blob); // Creamos una URL para el blob
-// Aquí deberías enviar la imagen al chat o donde corresponda
-console.log(`¡Imagen generada con éxito! Aquí está la URL: ${imgUrl}`);
-// Implementa aquí la lógica para enviar imgUrl al chat
+const response = await fetch(`https://eliasar-yt-api.vercel.app/editar-imagen?texto=${encodeURIComponent(text)}`);
+if (!response.ok) throw new Error('Network response was not ok');
+const buffer = await response.buffer();
+m.react('☑️');
+await conn.sendMessage(m.chat, {image: buffer}, {quoted: m});
 } catch (error) {
-console.error('Error:', error);
-// Manejo de errores, enviar mensaje de error al chat
-// Implementa aquí la lógica para enviar un mensaje de error al chat
+console.error(error);
+throw `*🚨 Ocurrió un error al generar la imagen...*`;
 }
-};
-// Ejemplo de uso
-const textoAGenerar = "CrowBot"; // Esto podría ser el texto que el usuario ingresa
-handler.handleCommand(textoAGenerar);
+}
+handler.tags = ['tools'];
+handler.help = ['genearimg'];
+handler.command = ['genearimg','imgg'];
+export default handler;
