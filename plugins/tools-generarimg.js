@@ -5,7 +5,7 @@
 handler.help = ['generarimg'];
 handler.tags = ['ai'];
 handler.command = /^generarimg$/i;
-handler.eatrellas = 1;
+handler.estrellas = 1;
 handler.register = true;
 handler.handleCommand = async (texto) => {
 const textoFormateado = encodeURIComponent(texto); // Formateamos el texto para la URL
