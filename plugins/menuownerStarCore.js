@@ -24,7 +24,7 @@ let tags = {
 'owner': 'menuowner',
 }
 
-let img = 'https://i.ibb.co/f986Hnr/file.jpg'
+let img = 'https://i.ibb.co/ncymk69/file.jpg'
   try {
           // DEFAULT MENU
       let dash = global.dashmenu
@@ -196,7 +196,7 @@ await m.react('👑')
 }
 handler.help = ['menuowner']
 handler.tags = ['main']
-handler.command = ['menuowner','ownermenu']
+handler.command = ['menuowner','ownermenu','menuow']
 
 export default handler
 
