@@ -22,5 +22,5 @@ throw `Error: ${error.message}`;
 }
 handler.tags = ['tools'];
 handler.help = ['removebg'];
-handler.command = ['removebg'];
+handler.command = ['removebg','bg'];
 export default handler;
