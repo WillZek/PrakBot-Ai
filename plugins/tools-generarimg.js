@@ -1,11 +1,10 @@
 // Código Hecho Por Niño Piña
-
 // Suponiendo que esto es parte de un manejador de comandos de un bot
 // Configuración del comando
 handler.help = ['generarimg'];
 handler.tags = ['ai'];
 handler.command = /^generarimg$/i;
-handler.estrellas = 1;
+handler.estrellas = 1; // Asegúrate de que el nombre sea correcto
 handler.register = true;
 handler.handleCommand = async (texto) => {
 const textoFormateado = encodeURIComponent(texto); // Formateamos el texto para la URL
@@ -19,10 +18,11 @@ const blob = await response.blob(); // Obtenemos la imagen como un blob
 const imgUrl = URL.createObjectURL(blob); // Creamos una URL para el blob
 // Aquí deberías enviar la imagen al chat o donde corresponda
 console.log(`¡Imagen generada con éxito! Aquí está la URL: ${imgUrl}`);
-// En un bot, podrías enviar la URL de la imagen en el chat
+// Implementa aquí la lógica para enviar imgUrl al chat
 } catch (error) {
 console.error('Error:', error);
 // Manejo de errores, enviar mensaje de error al chat
+// Implementa aquí la lógica para enviar un mensaje de error al chat
 }
 };
 // Ejemplo de uso
