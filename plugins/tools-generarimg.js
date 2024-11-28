@@ -5,11 +5,13 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
 const args = text.split(' ');
 const logoText = args[0]; // Nombre del logo
 const imageUrl = args[1]; // URL de la imagen
+// Verificar que se hayan ingresado ambos parámetros
 if (!logoText || !imageUrl) throw `*👻 ingrese el nombre del logo y la URL de la imagen*`;
 m.react('🕒');
 await conn.sendMessage(m.chat, {text: '*👻 Generando Imagen*'}, {quoted: m});
 try {
 const response = await fetch(`https://eliasar-yt-api.vercel.app/editar-imagen?texto=${encodeURIComponent(logoText)}&url=${encodeURIComponent(imageUrl)}`);
+// Verificar si la respuesta es válida
 if (!response.ok) throw new Error('Network response was not ok');
 const buffer = await response.buffer();
 m.react('✔️');
