@@ -1,9 +1,9 @@
 // Código Creado Por Niño Piña Wa.me/50557865603
 import fetch from 'node-fetch';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `*👻 ingrese un enlace de imagen para eliminar el fondo*`;
+if (!text) throw `*👻 ingrese el enlace de la imagen*`;
 m.react('🕒');
-await conn.sendMessage(m.chat, {text: '*👻 Eliminando fondo...*'}, {quoted: m});
+await conn.sendMessage(m.chat, {text: '*👻 Eliminando, Espere Un Momento...*'}, {quoted: m});
 try {
 const response = await fetch('https://api.picwish.com/v1/background-removal', {
 method: 'POST',
