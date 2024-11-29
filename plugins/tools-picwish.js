@@ -17,7 +17,7 @@ image: text // No Quites Los Créditos😑
 });
 if (!response.ok) throw new Error('Network response was not ok');
 const data = await response.json();
-if (data.status !== 'success') throw new Error('Error en la eliminación de fondo');
+if (data.status !== 'success') throw new Error('Ha Ocurrido Un Error');
 const buffer = Buffer.from(data.result.image, 'base64'); // Que no quites los créditos😑
 m.react('✔️');
 await conn.sendMessage(m.chat, {image: buffer}, {quoted: m});
