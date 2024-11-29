@@ -1,3 +1,5 @@
+// Creado Por WillZek Wa.me/50557865603
+
 import fetch from 'node-fetch';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (!text) throw `*🧑‍💻 ingrese la URL de la imagen*`;
