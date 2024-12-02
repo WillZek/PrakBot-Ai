@@ -8,7 +8,7 @@ global.ComprarBot = `
 〔 *PRAK - BOT* 〕
 
 *BOT PARA GRUPO* :
-> wa.me/529831715910
+> wa.me/50557865603
 
 *BOT PERZONALIZADO* :
 > wa.me/50557865603
