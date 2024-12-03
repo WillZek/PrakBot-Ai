@@ -24,7 +24,7 @@ str = `\`${name2}\` pidió precios.`; // Mensaje si no hay mención
 // Comprobamos si el comando es .precios1
 if (m.body === '.precios1') {
 // Reemplaza la URL con la imagen que deseas enviar
-const imageUrl = 'https://ejemplo.com/tu-imagen.jpg';
+const imageUrl = 'https://i.ibb.co/TcTRpHW/file.jpg';
 // Enviamos el mensaje con la imagen y el mensaje correspondiente
 conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: str }, { quoted: m });
 }
