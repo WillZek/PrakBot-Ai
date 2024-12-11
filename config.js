@@ -10,7 +10,7 @@ import axios from 'axios'
 
 global.owner = [
   ['50557865603', 'WillZek', true],
-  ['573209406578', 'CrowBot-Ai', true],
+  ['529983694618', 'Aamōn', true],
   ['584241836217', 'Prak Harper', true]
 ]
 
