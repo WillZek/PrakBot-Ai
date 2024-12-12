@@ -21,8 +21,8 @@ let Styles = (text, style = 1) => {
   return output.join('');
 };
 let tags = {
+  'main': 'INFO - BOT'
   'anime': 'ANIME',
-  'main': 'INFO',
   'search': 'SEARCH',
   'game': 'GAME',
   'serbot': 'SUB BOTS',
