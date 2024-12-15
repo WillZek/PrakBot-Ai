@@ -60,7 +60,7 @@ const defaultMenu = {
 ┃❄️ ➬ *Database:*  %totalreg
 ╰━─━─━─≪𖣘≫─━─━─━╯
      
-   ⏤͟͟͞͞★DemonBot-Aiꗄ➺
+   ⏤͟͟͞͞★PrakBot-Aiꗄ➺
 ◆━━━━━━━▣✦▣━━━━━━━━◆ 
  %readmore
 \t\t\t_*Lista De Comandos*_ ﭢ
