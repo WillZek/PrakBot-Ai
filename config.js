@@ -24,6 +24,8 @@ global.prems = []
 
 global.packname = `[ Sticker Maker`
 global.author = '🌠 Prak Ai WhatsApp Bot ]'
+global.stickpack = '© PrakBot'
+global.stickauth = 'By PrakHarper'
 global.wait = '🚩 *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛ𝙾... ฅ^•ﻌ•^ฅ*'
 global.botname = '[ Prak Ai WhatsApp Bot ]'
 global.textbot = `Powered By Prak Harper`
