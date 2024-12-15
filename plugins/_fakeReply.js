@@ -49,8 +49,8 @@ global.icono = [
             isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: "120363317263885467@newsletter",
-      title: 'Sigueme', 
-      body: 'Feliz Navidad', 
+      title: textbot, 
+      body: botname, 
       serverMessageId: 100,
       newsletterName: name,
     },
