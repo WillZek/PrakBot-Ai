@@ -16,13 +16,13 @@ txt += `✩  *Actualizado* : ${moment(json.updated_at).format('DD/MM/YY - HH:mm:
 txt += `✩  *Url* : ${json.html_url}\n`
 txt += `✩  *Forks* : ${json.forks_count}\n`
 txt += `✩  *Stars* : ${json.stargazers_count}\n\n`
-txt += `*${dev}*`
+txt += `*${textbot}*`
 
 await conn.sendMessage(m.chat, {text: txt, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: channelRD.name, newsletterJid: channelRD.id, }, externalAdReply: { title: packname, body: dev, thumbnailUrl: 'https://qu.ax/OlTj.jpg', sourceUrl: yt, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
 
 } catch {
 await conn.reply(m.chat, '✖️ *Ocurrió un error.*', m, fake)
-await m.react(error)
+await m.react('✖️')
 }}
 
 handler.help = ['script']
