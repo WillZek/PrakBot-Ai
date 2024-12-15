@@ -1,7 +1,7 @@
 **`PrakBot- En Desarrollo🚩`**
 > **Version:** 1.0.0
 
-![Prak](https://files.catbox.moe/5msd4h.jpg)
+![Prak](https://i.ibb.co/y5LqMDY/file.jpg)
 **[⚜️Canal Oficial PrakBot⚜️](https://whatsapp.com/channel/0029VakfOZfHFxP7rNrUQk2d)**
 
 ___
