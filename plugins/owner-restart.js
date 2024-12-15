@@ -3,6 +3,7 @@ let handler = async (m, { conn, isROwner, text }) => {
     if (!process.send) return m.react('✖️')
     if (conn.user.jid == conn.user.jid) {
     await m.reply('🚩 Reiniciando Bot...')
+m.react('✅')
     process.send('reset')
   } else return m.react('✖️')
 }
