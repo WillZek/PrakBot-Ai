@@ -44,6 +44,17 @@ global.icono = [
 'https://qu.ax/CHRS.jpeg',
 ].getRandom()
 
+ global.fake2 = {
+    contextInfo: {
+            isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: "120363317263885467@newsletter",
+      title: 'Sigueme', 
+      body: 'Feliz Navidad', 
+      serverMessageId: 100,
+      newsletterName: name,
+    },
+   }
 
  global.fake = {
     contextInfo: {
