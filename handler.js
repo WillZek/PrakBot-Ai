@@ -407,14 +407,14 @@ conn: this,
 
 global.dfail = (type, m, conn, usedPrefix) => {
     let msg = {
-        rowner: "> _*`¿Quien mierda eres?, Este comando es solo para mi Owner.`*_",
+        rowner: "> _*'Quien mierda eres?, Este comando es solo para mi Owner.`*_",
         owner: "> _*`estupido, Solo mi creador puede usar este comando.`*_",
         mods: "> _*`Perdón, Este comando solo es para mods`*_",
         premium: "> _*`No eres un usuario Premium, Habla con mi owner`*_",
         group: "> _*`Perdón, Este comando solo es para grupos así que deja de joder`*_",
         private: "> _*`Ve a mi chat privado y usa este comando`*_",
-        admin: "> _*`¿Que verga quieres?, tu no eres admin`*_",
-        botAdmin: "> _*`Es necesario que sea admin primero para usar esta función`*_",
+        admin: "> _*`Que verga quieres?, tu no eres admin`*_",
+        botAdmin: "> _*`Es necesario que sea admin primero para usar esta función Pendejo`*_",
         unreg: "> _*`‼️USUARIO NO REGISTRADO‼️`*_\n\n`Para registrarse:`\n\n> .reg nombre.edad\n\n`Ejemplo:`\n\n> .reg WillZek. 18",
         restrict: "> _*`Comando desactivado por mi Owner`*_" 
     }[type]
