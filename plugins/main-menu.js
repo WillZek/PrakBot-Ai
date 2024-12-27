@@ -204,7 +204,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
    //await conn.sendAi(m.chat, botname, textbot, text.trim(), img, img, canal, estilo)
 
   } catch (e) {
-    conn.reply: m.reply(m.chat, `Error: ${e.message}`, m)
+   m.reply(m.chat, `Error: ${e.message}`, m)
     throw e
   }
 }
