@@ -200,6 +200,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let img = 'https://i.ibb.co/NLBNkBZ/file.jpg'
     await m.react('🚀')
 
+let imagenes = ["https://files.catbox.moe/aitrwl.jpg",
+"https://files.catbox.moe/say0dh.jpg",
+"https://files.catbox.moe/9gylyb.jpg",
+"https://files.catbox.moe/53hv9g.jpg",
+"https://files.catbox.moe/sonk72.jpg",
+"https://files.catbox.moe/aitrwl.jpg",
+"https://files.catbox.moe/say0dh.jpg"]
+
+let icono = imagenes[Math.floor(Math.random() * imagenes.length)]
+
 global.rcanal = {
  contextInfo: {
              isForwarded: true,
