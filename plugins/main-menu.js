@@ -48,7 +48,7 @@ const defaultMenu = {
 > 「 ${textbot} あ⁩ 」\n
 
 ›   ╭━┄━┄━┄━┄━┄━┄╮.⠈.
-›   :･ ⃕✝︎ 𝐃̶͞𝐄𝐌̶͞𝐎𝐍 𝐁Ọ𝐓. 
+›   :･ ⃕✝︎ 𝕻𝐫𝐚𝐤 𝐁Ọ𝐓. 
 ›   ╰── ✝︎ ──.
 ╭━─━─━─≪✞︎≫─━─━─━╮
 ┃✰ ➬ *Cliente:* %name
@@ -67,7 +67,7 @@ const defaultMenu = {
 ┃✰ ➬ *Database:*  %totalreg
 ╰━─━─━─≪𓁹≫─━─━─━╯
      
-   ⏤͟͟͞͞☠︎︎𝕯𝐄𝐌Ọ𝐍 𝐁Ọ𝐓☠︎︎𓅓
+   ⏤͟͟͞͞☠𝕻𝐫𝐚𝐤 𝐁Ọ𝐓☠︎︎𓅓
 ◆━━━━━━━▣✦▣━━━━━━━━◆ 
  %readmore
 \t\t\t_*𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒*_ ﭢ
@@ -197,7 +197,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp13 = 'https://i.ibb.co/v1HS7MR/file.jpg'
     let pp14 = 'https://i.ibb.co/MsCpYBD/file.jpg'
     let pp15 = 'https://i.ibb.co/MsCpYBD/file.jpg'
-    let img = 'https://i.ibb.co/NLBNkBZ/file.jpg'
+    let img = 'https://i.ibb.co/y5LqMDY/file.jpg'
     await m.react('🚀')
 
 let imagenes = ["https://files.catbox.moe/aitrwl.jpg",
