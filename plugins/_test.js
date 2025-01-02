@@ -3,7 +3,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   conn.sendMessage(m.chat, {
     text: txt,
     caption: "1234",
-    footer: wm,
+    footer: botname,
     buttons: [
       {
         buttonId: ".menu",
