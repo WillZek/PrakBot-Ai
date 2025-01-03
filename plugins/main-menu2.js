@@ -15,7 +15,7 @@ let handler = async (m, { conn, args }) => {
   let perfil = await conn.profilePictureUrl(userId, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg');
 
 let name = '𝑷𝒓𝒂𝒌𝑩𝒐𝒕- 𝑴𝑫 - 𝑪𝒉𝒂𝒏𝒏𝒆𝒍'
-   let banner = 'https://i.ibb.co/s9N9QhG/file.jpg';
+   let banner = 'https://files.catbox.moe/3xqp7x.jpg';
 
   let MenuText = `𝐇𝐨𝐥𝐚! 𝐒𝐨𝐲 ${botname} 
 > © 𝐏𝐨𝐰𝐫𝐞𝐝 𝐁𝐲 (⁎˃ᴗ˂⁎)𝐈𝐒𝐀`.trim();
