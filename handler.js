@@ -89,6 +89,8 @@ export async function handler(chatUpdate) {
                     chat.bienvenida = true 
                 if (!('antiLink' in chat))
                     chat.antiLink = false
+                if (!('modoadmin' in chat))                     
+chat.modoadmin = false   
                 if (!('detect' in chat))
                     chat.detect = true 
                 if (!('onlyLatinos' in chat))
@@ -101,6 +103,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
                     bienvenida: true,
+                    modoadmin: false,
                     antiLink: false,
                     onlyLatinos: false,
                     nsfw: false, 
@@ -148,6 +151,11 @@ export async function handler(chatUpdate) {
         if (m.isBaileys)
             return
         m.exp += Math.ceil(Math.random() * 10)
+
+let adminMode = global.db.data.chats[m.chat].modoadmin
+let mini = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
+
+if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && mini) return   
 
         let usedPrefix
 
