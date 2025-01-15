@@ -86,7 +86,7 @@ let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => 
             txt += `│  🌠  *2* : Toque dispositivos vinculados\n`
             txt += `│  🌠  *3* : Selecciona *Vincular con el número de teléfono*\n` 
             txt += `└  🌠  *4* : Escriba el Codigo\n\n`
-            txt += `*👑Nota:* Este Código solo funciona en el número en el que se solicitó\n\n> *Sigan El Canal*\n> ${channel}`;
+            txt += `*👑Nota:* Este Código solo funciona en el número en el que se solicitó`;
         await parent.reply(m.chat, txt, m);
         await parent.reply(m.chat, codeBot, m);
         rl.close();
@@ -122,7 +122,7 @@ let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => 
         if (args[0]) return;
 
         await parent.reply(conn.user.jid, `La siguiente vez que se conecte envía el siguiente mensaje para iniciar sesión sin utilizar otro código `, m);
-        await parent.sendMessage(conn.user.jid, { text: usedPrefix + command + " " + Buffer.from(fs.readFileSync(`./LynxJadiBot/${authFolderB}/creds.json`), "utf-8").toString("base64") }, { quoted: m });
+        await parent.sendMessage(conn.user.jid, { text: usedPrefix + command + " " + Buffer.from(fs.readFileSync(`./PrakJadiBot/${authFolderB}/creds.json`), "utf-8").toString("base64") }, { quoted: m });
       }
     }
 
@@ -176,9 +176,8 @@ let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => 
 
 handler.help = ['code'];
 handler.tags = ['serbot'];
-handler.command = ['code', 'code'];
+handler.command = ['code', 'code', 'codee'];
 handler.rowner = false;
-handler.estrellas = 12;
 
 export default handler;
 
